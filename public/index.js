@@ -1,5 +1,5 @@
-const {Triangle, Circle, Square} = require('./lib/shapes')
-// const fs = require('fs');
+const {Triangle, Circle, Square} = require('./shapes')
+const fs = require('fs');
 const inquirer = require('inquirer');
 
 const userInput =[
@@ -25,24 +25,36 @@ const userInput =[
 
  function init () {
   inquirer.prompt(userInput).then(function (answers) {
-
+let logo;
 
 let shape;
 if (answers.shape === 'triangle')
 {
-  shape = new Triangle(answers.logoText, answers.textColor, answers.shapeColor);
+  shape = new Triangle(answers.logoText.toLowerCase(), answers.textColor, answers.shapeColor);
 }else if (answers.shape === 'circle'){
-  shape = new Circle(answers.logoText, answers.textColor, answers.shapeColor);
+  shape = new Circle(answers.logoText.toLowerCase(), answers.textColor, answers.shapeColor);
 } else if (answers.shape === 'square'){
-  shape = new Square(answers.logoText, answers.textColor, answers.shapeColor);
+  shape = new Square(answers.logoText.toLowerCase(), answers.textColor, answers.shapeColor);
 }
 console.log(shape);
 
-const logo = shape.render()
+logo = shape.render()
 console.log(logo);
 
-  })
- 
+
+
+  fs.writeFile('./logo.svg', logo, (err) => {
+    if (err) throw err;
+
+    console.log('File created');
+  });
+
+
+
+  });
+
+
  };
 
  init();
+

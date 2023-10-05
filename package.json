@@ -7,11 +7,17 @@
     "lib": "lib"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "triTest": "jest --testNamePattern='Testing for Triangle.'",
+  "circleTest": "jest --testNamePattern='Testing for Circle.'",
+  "squareTest": "jest --testNamePattern='Testing for Square.'"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "inquirer": "^8.2.6"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
   }
 }
