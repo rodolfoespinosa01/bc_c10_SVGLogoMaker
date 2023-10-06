@@ -31,7 +31,7 @@
 ## Usage
 Run node index.js in your terminal to start the inquirer.
 
-
+![Alt text](lib/img/module10prev.png)
 
 ## License
 MIT License Info.
