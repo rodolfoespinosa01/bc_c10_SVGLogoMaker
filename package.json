@@ -9,8 +9,8 @@
   "scripts": {
     "test": "jest",
     "triTest": "jest --testNamePattern='Testing for Triangle.'",
-  "circleTest": "jest --testNamePattern='Testing for Circle.'",
-  "squareTest": "jest --testNamePattern='Testing for Square.'"
+    "circleTest": "jest --testNamePattern='Testing for Circle.'",
+    "squareTest": "jest --testNamePattern='Testing for Square.'"
   },
   "author": "",
   "license": "ISC",
