@@ -52,7 +52,7 @@ const userInput =[
 
 
 
-  fs.writeFile('../examples/logo.svg', logo, (err) => {
+  fs.writeFile('./examples/logo.svg', logo, (err) => {
     if (err) throw err;
 
     console.log('File created');
