@@ -56,8 +56,5 @@ https://github.com/rodolfoespinosa01
 ## Project Repo
 https://github.com/rodolfoespinosa01/bc_c10_SVGLogoMaker
 
-## Deployed Website
-https://rodolfoespinosa01.github.io/bc_c10_SVGLogoMaker/
-
 ## Video walkthrough
 https://www.loom.com/share/959eb854e4774a568a02f7cd1b009774
